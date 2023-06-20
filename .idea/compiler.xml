@@ -8,14 +8,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="todosimple" />
+        <module name="to-do-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="to-do-api" target="17" />
       <module name="todosimple" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="to-do-api" options="-parameters" />
       <module name="todosimple" options="-parameters" />
     </option>
   </component>
